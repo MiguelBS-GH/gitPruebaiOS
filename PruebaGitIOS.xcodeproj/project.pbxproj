@@ -13,6 +13,7 @@
 		128670B025E6C62C006AE2D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 128670AE25E6C62B006AE2D8 /* Main.storyboard */; };
 		128670B225E6C62C006AE2D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 128670B125E6C62C006AE2D8 /* Assets.xcassets */; };
 		128670B525E6C62C006AE2D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 128670B325E6C62C006AE2D8 /* LaunchScreen.storyboard */; };
+		9A8D7BC71D34D8A9C485D6A1 /* Pods_PruebaGitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE99243FD6F6FB4962AE3FBE /* Pods_PruebaGitIOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		128670B125E6C62C006AE2D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		128670B425E6C62C006AE2D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		128670B625E6C62C006AE2D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BE381E4D30B9243AA7ED7B4 /* Pods-PruebaGitIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PruebaGitIOS.release.xcconfig"; path = "Target Support Files/Pods-PruebaGitIOS/Pods-PruebaGitIOS.release.xcconfig"; sourceTree = "<group>"; };
+		A3870EDBA279018A592E2028 /* Pods-PruebaGitIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PruebaGitIOS.debug.xcconfig"; path = "Target Support Files/Pods-PruebaGitIOS/Pods-PruebaGitIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		AE99243FD6F6FB4962AE3FBE /* Pods_PruebaGitIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PruebaGitIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A8D7BC71D34D8A9C485D6A1 /* Pods_PruebaGitIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				128670A725E6C62B006AE2D8 /* PruebaGitIOS */,
 				128670A625E6C62B006AE2D8 /* Products */,
+				F0DFCFE5C85E3CBC38F4DB88 /* Pods */,
+				867A0FD76096308AAD105254 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = PruebaGitIOS;
 			sourceTree = "<group>";
 		};
+		867A0FD76096308AAD105254 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE99243FD6F6FB4962AE3FBE /* Pods_PruebaGitIOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0DFCFE5C85E3CBC38F4DB88 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A3870EDBA279018A592E2028 /* Pods-PruebaGitIOS.debug.xcconfig */,
+				4BE381E4D30B9243AA7ED7B4 /* Pods-PruebaGitIOS.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 128670B925E6C62C006AE2D8 /* Build configuration list for PBXNativeTarget "PruebaGitIOS" */;
 			buildPhases = (
+				CA4C6D711ED6EA85265FA1B0 /* [CP] Check Pods Manifest.lock */,
 				128670A125E6C62B006AE2D8 /* Sources */,
 				128670A225E6C62B006AE2D8 /* Frameworks */,
 				128670A325E6C62B006AE2D8 /* Resources */,
@@ -131,6 +157,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CA4C6D711ED6EA85265FA1B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PruebaGitIOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		128670A125E6C62B006AE2D8 /* Sources */ = {
@@ -283,6 +334,7 @@
 		};
 		128670BA25E6C62C006AE2D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3870EDBA279018A592E2028 /* Pods-PruebaGitIOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +354,7 @@
 		};
 		128670BB25E6C62C006AE2D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BE381E4D30B9243AA7ED7B4 /* Pods-PruebaGitIOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

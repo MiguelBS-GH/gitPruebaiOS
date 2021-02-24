@@ -1,0 +1,6 @@
+framework module Pods_PruebaGitIOS {
+  umbrella header "Pods-PruebaGitIOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
