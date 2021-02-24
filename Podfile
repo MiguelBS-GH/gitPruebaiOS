@@ -6,5 +6,7 @@ target 'PruebaGitIOS' do
   use_frameworks!
 
   # Pods for PruebaGitIOS
+  
+  pod 'Firebase/Analytics'
 
 end

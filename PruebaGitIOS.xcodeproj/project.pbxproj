@@ -105,6 +105,7 @@
 				128670A125E6C62B006AE2D8 /* Sources */,
 				128670A225E6C62B006AE2D8 /* Frameworks */,
 				128670A325E6C62B006AE2D8 /* Resources */,
+				4C8D226BA8F167731264C9E2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -162,6 +163,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4C8D226BA8F167731264C9E2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PruebaGitIOS/Pods-PruebaGitIOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PruebaGitIOS/Pods-PruebaGitIOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PruebaGitIOS/Pods-PruebaGitIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		CA4C6D711ED6EA85265FA1B0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
